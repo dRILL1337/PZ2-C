@@ -1,0 +1,61 @@
+Завдання 1 ( варіант 5)
+#include <iostream>
+
+using namespace std;
+
+int main() {
+int N, a, b, c, sum = 0;
+
+cout << "Введіть трьохзначне число: ";
+cin >> N;
+
+a = N / 100;
+b = (N / 10) % 10;
+c = N % 10;
+
+if (a < 7) {
+sum += a;
+}
+
+if (b < 7) {
+sum += b;
+}
+
+if (c < 7) {
+sum += c;
+}
+
+cout << "Сума цифр менших 7: " << sum << endl;
+
+return 0;
+}
+Завдання 2 (варіант 12):
+
+#include <iostream>
+
+using namespace std;
+
+int main() {
+
+int month;
+
+cout << "Введіть номер місяця: ";
+cin >> month;
+
+switch(month) {
+case 1:
+cout << "Січень" << endl;
+break;
+case 2:
+cout << "Лютий" << endl;
+break;
+//...
+case 12:
+cout << "Грудень" << endl;
+break;
+default:
+cout << "Помилка! Введіть число від 1 до 12." << endl;
+}
+
+return 0;
+}
